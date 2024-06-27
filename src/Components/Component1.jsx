@@ -1,3 +1,4 @@
+import './component1.css'; // Import the custom CSS
 
 const Component1 = () => {
   const images = [
@@ -9,11 +10,19 @@ const Component1 = () => {
 
   return (
     <div className="flex justify-center space-x-4">
-      {images.map((image, index) => (
-        <div key={index} className="w-1/4 transform transition-transform duration-300 hover:scale-110 rounded-lg shadow-lg">
-          <img src={image} alt={`Image ${index + 1}`} className="w-full h-auto rounded-lg" />
-        </div>
-      ))}
+      {/* Empty div with a separate image */}
+      <div className="w-1/4 rounded-lg shadow-lg">
+        <img src="/images/img1.jpg" alt="Separate Image" className="w-full h-64 object-cover rounded-lg" />
+      </div>
+
+      {/* Wrapper div for the images */}
+      <div className="image-wrapper">
+        {images.map((image, index) => (
+          <div key={index} className="image-container rounded-lg shadow-lg">
+            <img src={image} alt={`Image ${index + 1}`} className="w-full h-64 object-cover rounded-lg" />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
