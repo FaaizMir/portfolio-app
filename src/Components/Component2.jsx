@@ -1,4 +1,9 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft,faChevronRight } from '@fortawesome/free-solid-svg-icons'
+
+
+
 const Component2 = () => {
     const [currentImage,setCurrentImage]=useState(1);
     const images = [
@@ -33,16 +38,18 @@ const Component2 = () => {
     </div>
     <button
       onClick={prevImage}
-      className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full hover:bg-gray-500 focus:outline-none"
+      className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-black text-xl p-4 rounded-full hover:bg-gray-500 focus:outline-none"
     >
-      &#8592;
-    </button>
+      <FontAwesomeIcon icon={faChevronLeft} />
+      </button>
     <button
       onClick={nextImage}
-      className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full hover:bg-gray-500 focus:outline-none"
+      className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-black p-4 text-xl rounded-full hover:bg-gray-500 focus:outline-none mr-6"
     >
-      &#8594;
-    </button>
+      <FontAwesomeIcon icon={faChevronRight} />
+      </button>
+
+    
   </div>
   )
 }
