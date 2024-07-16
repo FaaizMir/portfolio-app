@@ -5,8 +5,6 @@ import PastProjects from "./MainRoutes/PastProjects"
 import Contact from "./MainRoutes/Contact"
 import Services from "./MainRoutes/Services"
 // import Home from "./Components/Home"
-import Navbar from "./Components/Navbar"
-//testing this useReducer component
 
 
 
@@ -15,7 +13,6 @@ export default function App() {
 <div>
 
 <BrowserRouter>
-<Navbar />
   <Routes>
     <Route path="/" element={<About />} />
     <Route path="/resources" element={<Resources />} />
