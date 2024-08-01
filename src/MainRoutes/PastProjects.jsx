@@ -7,10 +7,13 @@ import { faChevronLeft,faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const PastProjects = ({refUse}) => {
     const [currentImage,setCurrentImage]=useState(1);
+    const [isPlaying,setIsPlaying]=useState(false);
     const images = [
-        '/images/img5.avif',
-        '/images/img6.avif',
-        '/images/img7.avif',
+        '/videos/Video1.mp4',
+        '/videos/Video2.mp4',
+        '/videos/Video3.mp4',
+        '/videos/Video4.mp4',
+        '/videos/Video5.mp4'
       ];
 
       const nextImage = () => {
@@ -31,11 +34,15 @@ const PastProjects = ({refUse}) => {
 
        })
      }
+     const handleVideoClick=()=>{
+   setIsPlaying(!isPlaying);
+   console.log("clivked");
+     }
 
   return (
-    <div className="relative w-screen h-screen" ref={refUse}>
-    <div className="overflow-hidden w-full h-full">
-      <img src={images[currentImage]} alt={`Image ${currentImage + 1}`} className="w-full h-full object-cover" />
+    <div className="relative w-screen h-screen mt-24 flex justify-center items-center" ref={refUse}>
+    <div className="overflow-hidden w-3/4 h-3/4">
+      <video controls src={images[currentImage]} alt={`Image ${currentImage + 1}`} className="w-full h-full object-cover" onClick={handleVideoClick} />
     </div>
     <button
       onClick={prevImage}

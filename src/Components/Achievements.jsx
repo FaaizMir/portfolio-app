@@ -28,26 +28,26 @@ const Achievements = () => {
     }, );
   return (
     <div>
-      <section className="text-gray-600 body-font bg-blue-700">
- <div className="text-center bg-blue-800 ">
-    <h1 className="text-4xl mt-26 text-black font-extrabold">Our Achievements</h1>
+      <section className="text-gray-600 body-font ">
+ <div className="text-center bg-black ml-10 mr-10 mt-10  ">
+    <h1 className="text-4xl mt-26 text-white font-extrabold font-serif">Our Achievements</h1>
  <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-wrap -m-4 text-center">
       <div className="p-4 sm:w-1/4 w-1/2">
-        <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">{video1}+</h2>
-        <p className="leading-relaxed">Users</p>
+        <h2 className="title-font font-medium sm:text-4xl text-5xl text-white">{video1}+</h2>
+        <p className="leading-relaxed text-white text-3xl font-serif">Users</p>
       </div>
       <div className="p-4 sm:w-1/4 w-1/2">
-        <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">{social1}+</h2>
-        <p className="leading-relaxed">Subscribes</p>
+        <h2 className="title-font font-medium sm:text-4xl text-5xl text-white">{social1}+</h2>
+        <p className="leading-relaxed text-white text-3xl font-serif">Subscribes</p>
       </div>
       <div className="p-4 sm:w-1/4 w-1/2">
-        <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">{graphic1}+</h2>
-        <p className="leading-relaxed">Downloads</p>
+        <h2 className="title-font font-medium sm:text-4xl text-5xl text-white">{graphic1}+</h2>
+        <p className="leading-relaxed text-white text-3xl font-serif">Downloads</p>
       </div>
       <div className="p-4 sm:w-1/4 w-1/2">
-        <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">{web1}+</h2>
-        <p className="leading-relaxed">Products</p>
+        <h2 className="title-font font-medium sm:text-4xl text-5xl text-white">{web1}+</h2>
+        <p className="leading-relaxed text-white text-3xl font-serif">Products</p>
       </div>
     </div>
   </div>
