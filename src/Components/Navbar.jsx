@@ -11,17 +11,17 @@ const Navbar = ({ handleScroll, refs }) => {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-gray-200">
-    <nav className="p-10 flex justify-between items-center h-14">
+    <nav className="p-10 flex justify-between items-center h-40">
       <div className="text-white text-xl font-bold">
-        <img className="object-contain" src="images/logo1.png" alt="Your Logo" />
+        <img className="object-contain h-60" src="images/visualcreationslogo.png" alt="Your Logo" />
       </div>
       <div className="hidden md:flex space-x-4">
-        <Link to="/" className="font-serif text-red-800 text-xl hover:text-red hover:text-2xl font-bold">About</Link>
-        <button className="font-serif text-red-800 text-xl hover:text-red hover:text-2xl font-bold" onClick={() => handleScroll(refs.refA)}>Services</button>
-        <button className="font-serif text-red-800 text-xl hover:text-red hover:text-2xl font-bold" onClick={() => handleScroll(refs.refB)}>Past Projects</button>
-        <button className="font-serif text-red-800 text-xl hover:text-red hover:text-2xl font-bold">Testimonials</button>
-        <button className="font-serif text-red-800 text-xl hover:text-red hover:text-2xl font-bold">Clients</button>
-        <button className="font-serif text-red-800 text-xl hover:text-red hover:text-2xl font-bold">Contact</button>
+        <Link to="/" className=" text-red-800 text-2xl hover:text-red hover:text-3xl font-bold">About</Link>
+        <button className=" text-red-800 text-2xl hover:text-red hover:text-3xl font-bold" onClick={() => handleScroll(refs.refA)}>Services</button>
+        <button className=" text-red-800 text-2xl hover:text-red hover:text-3xl font-bold" onClick={() => handleScroll(refs.refB)}>Past Projects</button>
+        <button className=" text-red-800 text-2xl hover:text-red hover:text-3xl font-bold">Testimonials</button>
+        <button className=" text-red-800 text-2xl hover:text-red hover:text-3xl font-bold">Clients</button>
+        <button className=" text-red-800 text-2xl hover:text-red hover:text-3xl font-bold">Contact</button>
       </div>
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-red-800">

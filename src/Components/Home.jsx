@@ -23,7 +23,7 @@ const Home = () => {
     <div className='pt-20'>
       <Navbar handleScroll={handleClick} refs={{ refA, refB }} />
       <Component1 />
-      {/* <Component2 /> */}
+    
       <Services refUse={refA} />
       <PastProjects refUse={refB} />
       <Achievements />
