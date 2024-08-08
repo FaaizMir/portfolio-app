@@ -1,7 +1,7 @@
 
 const Contact = () => {
   return (
-    <section className="text-gray-600 body-font bg-gray-200">
+    <section className="text-gray-600 body-font bg-gray-200 mt-16">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         {/* Image Section (Right Half) */}
         <div className="lg:w-1/2 md:w-1/2 w-full mb-10 md:mb-0 lg:order-1 order-2">

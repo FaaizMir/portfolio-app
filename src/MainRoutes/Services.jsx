@@ -42,14 +42,13 @@ const Services = ({ refUse}) => {
 
 
 
-<div className="flex justify-center items-center h-screen ml-20 mr-20 mt-1">
+{/* <div className="flex justify-center items-center h-screen ml-20 mr-20 mt-1">
       <div className="bg-gray-100  rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-        {/* Card content */}
         <img className="h-80 rounded w-full object-cover object-center mb-6" src="images/videoproduction.png" alt="content" />
         <h1 className="text-2xl text-gray-900 font-medium title-font mb-4">Video Production</h1>
         <p className="leading-relaxed text-base">At Visuals Media, we build beautiful and functional websites for your business. Our team designs and develops sites that are easy to use and look great on any device. Your website will represent your brand and meet your needs. Trust us to create a top-quality website that helps you succeed online.</p>
       </div>
-    </div>
+    </div> */}
 
     <Production />
 

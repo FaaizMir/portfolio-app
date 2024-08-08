@@ -8,6 +8,7 @@ import Achievements from './Achievements';
 import Contact from '../MainRoutes/Contact';
 import Clients from './Clients';
 import FounderData from './FounderData';
+import Testimonials from '../MainRoutes/Testimonials';
 
 const Home = () => {
   const refA = useRef(null);
@@ -29,6 +30,7 @@ const Home = () => {
       <Achievements />
       <Clients />
       <FounderData />
+      <Testimonials />
       <Contact />
 
     </div>
