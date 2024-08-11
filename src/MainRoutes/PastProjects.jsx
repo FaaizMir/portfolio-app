@@ -8,15 +8,15 @@ import { faChevronLeft,faChevronRight } from '@fortawesome/free-solid-svg-icons'
 const PastProjects = ({refUse}) => {
     const [currentImage,setCurrentImage]=useState(1);
     const [isPlaying,setIsPlaying]=useState(false);
-    const [videoHeading,setVideoHeading]=useState(1);
+    // const [videoHeading,setVideoHeading]=useState(1);
 
-    const headings=[
-      "WhiteBoard Animation",
-      "Reel",
-      "Reel",
-      "Cashcow Video",
-      "Slideshow "
-    ]
+    // const headings=[
+    //   "WhiteBoard Animation",
+    //   "Reel",
+    //   "Reel",
+    //   "Cashcow Video",
+    //   "Slideshow "
+    // ]
     const images = [
         'https://www.youtube.com/embed/GWW8bX4L2C8?si=vcLAYezR5F2FW2ym"',
         'https://www.youtube.com/embed/TzAvJvjcrc8?si=q95PLM3LPPJoHf8f',
@@ -36,12 +36,12 @@ const PastProjects = ({refUse}) => {
          
           return prevImg; // Return the current value if the condition is not met
         });
-        setVideoHeading((prev)=>{
-          if(prev < headings.length -1){
-            return prev +1 ;
-          }
-          return prev ;
-        })
+        // setVideoHeading((prev)=>{
+        //   if(prev < headings.length -1){
+        //     return prev +1 ;
+        //   }
+        //   return prev ;
+        // })
         console.log("forward clicked");
 
       };
@@ -54,11 +54,11 @@ const PastProjects = ({refUse}) => {
 
        })
 
-       setVideoHeading((prev)=>{
-        if(prev>0)
-          return prev-1 ;
-        return prev
-       })
+      //  setVideoHeading((prev)=>{
+      //   if(prev>0)
+      //     return prev-1 ;
+      //   return prev
+      //  })
      }
      const handleVideoClick=()=>{
    setIsPlaying(!isPlaying);
@@ -75,7 +75,7 @@ const PastProjects = ({refUse}) => {
     <div className="absolute top-0 left-0 right-0 text-center">
           <h1 className="text-red-500 font-bold text-3xl ">Past Projects</h1>
           
-          <h2 className="text-black text-3xl">{headings[videoHeading]}</h2>
+          {/* <h2 className="text-black text-3xl">{headings[videoHeading]}</h2> */}
         </div>
     <button
       onClick={prevImage}
